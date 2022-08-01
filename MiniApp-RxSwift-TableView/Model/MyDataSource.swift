@@ -18,7 +18,7 @@ final class MyDataSource: NSObject, UITableViewDataSource, RxTableViewDataSource
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "custumCell", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as! TableViewCell
         let element = itemArray[indexPath.row]
         cell.nameLabel.text = element.name
         return cell

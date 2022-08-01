@@ -39,7 +39,7 @@ class ViewController: UIViewController{
 
     private func setupTableView(){
         rxTableView.rowHeight = 200
-        rxTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "custumCell")
+        rxTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: TableViewCell.identifier)
     }
 }
 
